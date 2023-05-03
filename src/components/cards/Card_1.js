@@ -8,7 +8,7 @@ export default function Card_1({title,img,except,slug,id}) {
       
         <p className='text-2xl pt-[100px]' >{title}</p>
         <p className='text-blue-600' >{except}</p>
-        <div className='item-center' >
+        <div className='item-center p-5' >
           <img className='w-[400px] ' src={img} alt={title} />
         </div>
     </div>

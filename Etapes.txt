@@ -9,6 +9,8 @@ Projet avec Next js
 6 creation fichier .env.local a la racine avec les variables d'environnement
 7 
 
+pour le richtext => npm i @contentful/rich-text-react-renderer 
+
 
 
 

@@ -17,7 +17,7 @@ export default function Home({posts}) {
     
     <div>
       <NavBar/>
-      <h1 className='text-red-500 text-center pt-2 ' >Home</h1>
+      <h1 className='text-red-500 text-center pt-9 ' >Home</h1>
 
       {posts.map((post)=>
       <Link href={`post/${post.fields.slug}`} >
