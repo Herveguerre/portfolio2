@@ -1,13 +1,15 @@
 Projet avec Next js
 
-
+npm i 
 1 create projet npx create-next-app@latest
-2 install contentful dependance => npm i contentfull
+2 install contentful dependance => npm i contentful
 3 creer un compte sur contentful
 4 creer un contenu dans contentful
 5 connextion avec mes clé api contentful => setting => api key => add apikeys
 6 creation fichier .env.local a la racine avec les variables d'environnement
 7 
+
+pour le richtext => npm i @contentful/rich-text-react-renderer 
 
 
 

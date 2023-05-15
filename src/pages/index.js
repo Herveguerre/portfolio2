@@ -1,11 +1,14 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import NavBar from '@/components/navigation/NavBar'
+
 import Footer from '@/components/footer/Footer'
 import { createClient } from 'contentful'
 
 import Card_1 from '@/components/cards/Card_1'
 import Link from 'next/link'
+import Hero from '@/components/Hero'
+import Section2 from '@/components/Section2'
+import NavBar_2 from '@/components/navigation/NavBar_2'
 
 
 
@@ -14,25 +17,29 @@ export default function Home({posts}) {
   console.log(posts);
   
   return (
-    
-    <div>
-      <NavBar/>
-      <h1 className='text-red-500 text-center pt-2 ' >Home</h1>
 
-      {posts.map((post)=>
-      <Link href={`post/${post.fields.slug}`} >
-      <Card_1 
-        key={post.sys.id}
-        title={post.fields.title}
-        except={post.fields.except}
-        img={post.fields.featuredImage.fields.file.url}
-        
-      />
-      </Link>
-      )}
-
-      <Footer/>
+  <div>
+    <NavBar_2/>
+    <Hero/>
+    <Section2/>
+    <div className='bg_section3'>
+      <div className=' '>
+        <div className='sec3 container flex' >
+          {posts.map((post)=>      
+            <Link href={`post/${post.fields.slug}`} >         
+              <Card_1 
+                key={post.sys.id}
+                title={post.fields.title}
+                except={post.fields.except}
+                img={post.fields.featuredImage.fields.file.url}
+              />         
+            </Link>
+          )}
+        </div>
+      </div>
     </div>
+    <Footer/>
+  </div>
   )
 }
 
@@ -49,7 +56,7 @@ export async function getStaticProps(){
   const data = await client.getEntries({
     content_type:"escciBlog",
     order:"sys.createdAt",
-    limit:8,
+    limit:9,
   });
 
   //3 envoi la data dans props
@@ -59,4 +66,5 @@ export async function getStaticProps(){
     },
     
   };
+
 }
