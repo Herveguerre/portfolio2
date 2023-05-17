@@ -6,10 +6,16 @@ export default function Section2() {
       <div className="container flexR">
 
         <div className="section2R">
-          <video autoPlay loop width="540">
+          <video autoPlay loop width="530">
             <source src="/img/phone.mp4" type="video/mp4" />
             vidéo non prispas en charge .
-          </video>           
+          </video>  
+          <div className="fleche">
+          <img src="/img/fleche.png" />
+            <p>Featured Projet</p>
+            <h5>Tryotel App</h5>
+          
+          </div>
         </div>   
 
         <div className="section2L">
@@ -20,7 +26,7 @@ export default function Section2() {
             like Doc's always saying. Oh, what I meant to day was- I got enough
             practical jokes for one evening. Good night, fut
           </p>
-          <button className="btn_sec3" >mes projets</button>          
+                    
         </div> 
               
       </div>    

@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default function Footer() {
   return (
     <div>
@@ -8,7 +7,8 @@ export default function Footer() {
             <p><a href="mailto:herveguerre@hotmail.fr">Contact</a></p>
             <p><a href="https://www.facebook.com/votrepage">Visitez mon Facebook</a></p>
           <div>
-          <a href="https://www.youtube.com/">youtube</a>         
+          <a href="https://www.youtube.com/">youtube</a> 
+          <p>github</p>        
           </div>
       </div>
     </div>  
